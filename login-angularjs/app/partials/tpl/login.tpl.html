@@ -1,0 +1,16 @@
+
+<div class="contanier">
+	<form class="form-signin" name="form1">
+		<div class="form-group">
+			<p>Welcome : {{user.mail}}</p>
+			<label for="exampleInputEmail">Mail</label>
+			<input type="text" placeholder="Enter name" class="form-control" require ng-model="user.mail">	
+		</div>
+		<div class="form-group">
+			<label for="exmapleInputPassword1">Passwrod</label>
+			<input type="password" placeholder="Password" id="exampleInputPassword1" class="form-control" required ng-model="user.pass">
+		</div>
+		<button class="btn btn-default" type="submit" ng-disabled="form1.$invalid" ng-click="login(user)">Submit</button>
+		<p>{{msgtxt}}</p>
+	</form>
+</div>
